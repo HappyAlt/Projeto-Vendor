@@ -1,0 +1,192 @@
+/* Geral */
+.wrapper {
+  min-height: 100vh;
+  background: url(../../Style/Background-L.png) no-repeat fixed center;
+  background-size: cover;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar{
+  width: 10px
+}
+::-webkit-scrollbar-track:enabled{
+  background-color: rgb(100, 100, 100);
+  border-radius: 16px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(155, 155, 155);
+  border-radius: 16px;
+}
+
+/* Cabeçalho*/
+.Apr{
+  width: 100%;
+  padding: 24px;
+
+  background-image: linear-gradient(to right, rgb(255, 107, 20), rgb(255, 170, 0));
+  border-bottom-right-radius: 32px;
+
+  position: sticky;
+  top: 0px;
+  z-index: 1001;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Basics, .Busca{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+[name='ChMode']{
+  position: fixed;
+  right: 56px;
+  top: 56px;
+  z-index: 1003;
+
+  width: 36px;
+  height: 36px;
+}
+
+  input:focus, textarea:focus{
+    outline: none;
+}
+
+/* Formulários */
+.GenDel{
+  width: max-content;
+  height: 45vh;
+  padding: 20px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 16px;
+
+  background-color: rgba(255, 255, 255, 0.719);
+  
+  border: solid 2px rgb(184, 184, 184);
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  transform: translateY(-100%);
+  transition: all 0.1s ease-in-out;
+}
+
+.GDDashed{
+  transition: all 0.1s ease-in-out;
+  transform: translateY(-30%);
+}
+
+fieldset[name='IComp']{
+  display: flex;
+  gap: 8px;
+}
+button[name=AddItem]{
+  align-self: flex-end;
+}
+
+fieldset[name='IDelField']{
+  display: flex;
+  gap: 8px;}
+
+/* Demostração de itens */
+.Vendor{
+  flex: 1;
+}
+
+.Produtos{
+  width: 95vw;
+  
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 64px;
+  margin: 40px auto;
+}
+
+/* Botões de Navegação */
+.NAVPointer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  gap: 16px;
+
+  z-index: 1004;
+}
+
+/* Footer */
+footer{
+  background-color: rgb(55, 55, 55);
+  color: rgb(155, 155, 155);
+
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+dd{
+  margin-inline-start: 16px;
+}
+
+/* Modo Escuro */
+.NApr{
+  background-image: linear-gradient(to right, rgb(58, 0, 136), rgb(101, 67, 187));
+}
+
+.NGenDel{
+  background-color: rgba(0, 0, 0, 0.719);
+  border: solid 2px black;
+}
+
+.NFooter{
+  background-color: rgb(155, 155, 155);
+  color: rgb(55, 55, 55);
+}
+
+.NWrapper{
+  background: url(../../Style/Background-D.png) no-repeat fixed center;
+  background-size: cover;
+}
+
+/* Botões */
+
+.Basics button, [name='BGenDel'], [name='AddItem'], [name='DeleteItem']{
+  font-size: 36px;
+  color: white;
+}
+[name='AddItem'], [name='DeleteItem']{
+  color: black;
+}
+[name='ChMode'], .NAVPointer button{
+  font-size: 40px;
+  color: black;
+}
+[disabled]{
+  opacity: 50%;
+}
+button:hover{
+  transform: scale(130%);
+}
+
+.Basics .WTB, .Busca .WTB{
+  color: black;
+}
+.NAVPointer .BTW, .BTW{
+  color: white;
+}

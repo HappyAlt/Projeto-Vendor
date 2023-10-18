@@ -1,0 +1,13 @@
+.Content{
+    height: 100vh;
+    padding: 16px 0 0 16px;
+}
+.Content h1, .Content h2{
+    color: rgb(0, 119, 255);
+}
+.NContent h1, .NContent h2{
+    color: rgb(202, 238, 0);
+}
+.NContent p{
+    color: white;
+}

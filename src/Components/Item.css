@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+}
+
+/*::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #BDBDBD;
+    border-radius: 5px;}*/
+
+.Item{
+    width: 144px;
+    height: 224px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: linear-gradient(to bottom, rgb(255, 107, 20), rgb(255, 170, 0));
+    border: solid 2px black;
+    border-radius: 24px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.Item h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    
+    color: rgb(0, 110, 255);
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    text-align: center;
+
+    max-width: 80%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+
+}
+.Item img{
+    width: 7em;
+    height: 7em;
+
+    border-radius: 16px;
+    border: solid 2px black;
+    background-color: white;
+
+    object-fit: cover;
+}
+
+.Desc{
+    width: 85%;
+    height: 25%;
+    
+    margin-top: 8px;
+    
+    overflow-y: scroll;
+}
+
+.Item p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+
+    word-wrap: break-word;
+}
+
+/* Zoom */
+
+.Item:hover{
+    transform:scale(120%);
+
+    transition: all 0.2s ease-in-out;
+}
+
+/* Modo Escuro */
+
+.NItem{
+    background-image: linear-gradient(to bottom, rgb(58, 0, 136), rgb(101, 67, 187));
+    border: solid 2px white;
+}
+.NItem h1{
+    color: rgb(202, 238, 0);
+}
+.NItem img{
+    border: solid 2px white;
+}
+
+.NItem p{
+    color: black;
+    -webkit-text-stroke: 0.5px black;
+}

@@ -6,6 +6,7 @@ import './App.css'
 import '../../Reset.css';
 import {Item} from '../../Components/Item'
 import {Dev} from '../Dev/Dev'
+import {Initial} from '../Initial/Initial'
 
 import { FiBookOpen } from "react-icons/fi";
 import { FiHome } from "react-icons/fi";
@@ -281,6 +282,14 @@ function App() {
         <main className='Vendor'>
           <Routes>
 
+            <Route path='Projeto-Vendor' element={
+              <Context.Provider value={[NMode, setNMode]}>
+                <Initial/>
+              </Context.Provider>
+            }>
+
+            </Route>
+
             <Route path='/' element={<>
               <section>
                 <div className='Produtos'>
@@ -317,7 +326,7 @@ function App() {
 
             <Route path='/Dev' element={
               <Context.Provider value={[NMode, setNMode]}>
-                <Dev></Dev>
+                <Dev/>
               </Context.Provider>
             }/>
             

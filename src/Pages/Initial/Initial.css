@@ -1,0 +1,11 @@
+.Initial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    line-height: 72px;
+}
+.Initial h1{
+    font-size: 45px;
+    margin-top: 24px;
+}

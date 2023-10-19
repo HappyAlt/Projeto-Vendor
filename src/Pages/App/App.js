@@ -282,7 +282,7 @@ function App() {
         <main className='Vendor'>
           <Routes>
 
-            <Route path='Projeto-Vendor' element={
+            <Route path='/Projeto-Vendor/' element={
               <Context.Provider value={[NMode, setNMode]}>
                 <Initial/>
               </Context.Provider>
